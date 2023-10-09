@@ -13,18 +13,19 @@ class Program
 		Console.WriteLine("Hi - to Customer Support \nBuy - to show products \nBye - to End Chat\n");
 		Console.Write("You >> ");
 		string msg = Console.ReadLine();
+		string lowercaseMsg = msg.ToLower();
 
-		if (msg == "Hi") 
+		if (lowercaseMsg == "hi")
 		{
 			Console.WriteLine("Hey, Welcome");
 			userInput();
 		}
-		else if (msg == "Buy")
+		else if (lowercaseMsg == "buy")
 		{
 			Console.WriteLine("Welcome to shop");
 			userInput();
 		}
-		else if (msg == "Bye")
+		else if (lowercaseMsg == "bye")
 		{
 			Console.WriteLine("See you...");
 		}
